@@ -6,12 +6,11 @@
 <body>
     <div id="api"></div>
     <script>
-        $( "#password" ).click(function() {
-            alert( "Enter correct password" );
-        });
-        $( "#next" ).click(function() {
+        var next = document.getElementById('next');
+        next.setAttribute('onclick', 'myfunc();');
+        function myfunc() {
             alert( "Submitting..." );
-        });
+        }
     <script>
 </body>
 </html>
